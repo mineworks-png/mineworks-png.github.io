@@ -24,6 +24,26 @@
             text-shadow: 2px 2px #000;
             margin-top: 20px;
         }
+        nav {
+            positiom:fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background: rgba(0,0,0,0.85);
+            border-bottom: 3px solid #00ff00
+                padding: 10px 0;
+            z-index: 100;
+        }
+        nav a {
+            color: #00ff00;
+            text-decoration: none;
+            margin: 0 20px;
+            font-size: 14px;
+            transition: color 0.3;
+        }
+        nav a:hover {
+            color: #ffcc00;
+        }
         .card {
             background: rgba(0, 0, 0, 0.8);
             padding: 20px;
@@ -32,17 +52,54 @@
             border-radius: 10px;
             max-width: 600px;
         }
+        .card:hover {
+            transform: scale(1.05);
+            bos-shadow:0 0 20px #00ff00;
+        }
+        .card img {
+            width: 100%;
+            border: 3px solid #00ff00;
+            border-radius: 5px;
+        }
+        .card h2 {
+            color: #ffcc00
+            text-shadow: 2px 2px #000
+            margin-top:0
+        }
+        section {
+            margin-bottom: 50px;
+        }
     </style>
 </head>
 <body>
-    <h1>🌍 Welcome to AdyCraft! 🌍</h1>
-    <div class="card">
-        <h2>Minecraft Builds, Mods & Fun</h2>
-        <p>Hi, I'm Ady! I make awesome Minecraft creations and share them with the world.</p>
-    </div>
-</body>
-
+    <nav>
+        <a href="home">Menu</a>
+        <a href="builds">Builds</a>
+        <a href="contact">Contact</a>
+    </nav>
+    <section id="menu">
+        <h1>Menu</h1>
+        <p>Bine ai venit! Foloseste navigatia de sus pentru a exlpora creatiile mele si pentru a ma contacta!</p>
+        
+    <section id="builds">
+        <h1>Creatiile mele.</h1>
+        <div> class="card" style="flex: 1 1 300px: max-width: 300px:">
+  h2>Tablouri Minecraft</h2>
+    <img src="https://i.etsystatic.com/19912915/r/il/600fb7/3903868647/il_1588xN.3903868647_2l0p.jpg" alt="Tablouri" style="width:100%; border: 3px solid #00ff00: border-radius: 5px:">
+    <p>Niste Tablouri care le-am colorat.</p></div>
+<div> class="card" style="flex: 1 1 300px: max-width: 300px:">
+     <h2>Figurine din hartie Minecraft</h2>
+    <img src="https://i.ytimg.com/vi/hvYFW9T9TKw/maxresdefault.jpg" alt="Figurine" style="width:100%; border :3px solid %00ff00: border-radius:5px:">
+    <p>Niste Figurine din hartie pe care le-am facut.</p>
+</div>
+    </section>
+<section id="contact">
+    <h2>Contacteaza-ma!</h2>
+    <p>Email: pavaladriann0@gmail.com</p>
+    <p>Instagram:paval_ady_adyscrafts</p>
+</section>
 </html>
+
 
 
 
