@@ -2,20 +2,17 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>AdyCraft - Minecraft Builds</title>
+    <title>AdyCraft</title>
     <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
     <style>
+        html { scroll-behavior: smooth; }
         body {
             font-family: 'Press Start 2P', monospace;
-            background: url('https://static.wikia.nocookie.net/minecraft_gamepedia/images/c/c1/Dirt_background_JE2.png') no-repeat center center fixed;
+            margin: 0;
+            background: url('https://c4.wallpaperflare.com/wallpaper/427/237/185/background-dirt-minecraft-minimalistic-wallpaper-preview.jpg') no-repeat center center fixed;
             background-size: cover;
             color: #f5f5f5;
-            margin: 0;
-            padding-top: 80px; 
             text-align: center;
-        }
-        html {
-            scroll-behavior: smooth; 
         }
         nav {
             position: fixed;
@@ -34,21 +31,18 @@
             font-size: 14px;
             transition: color 0.3s;
         }
-        nav a:hover {
-            color: #ffcc00;
-        }
+        nav a:hover { color: #ffcc00; }
+
         section {
-            padding: 50px 20px;
+            padding: 100px 20px;
+            min-height: 100vh;
         }
-        #menu h1 {
-            font-size: 2em;
-            color: #00ff00;
-            text-shadow: 2px 2px #000;
-            margin-bottom: 20px;
-        }
-        #menu p {
-            font-size: 14px;
-        }
+
+        /* Menu Section */
+        #menu h1 { font-size: 2em; color: #00ff00; text-shadow: 2px 2px #000; margin-bottom: 20px; }
+        #menu p { font-size: 14px; }
+
+        /* Builds Section */
         .cards-container {
             display: flex;
             flex-wrap: wrap;
@@ -61,25 +55,16 @@
             border: 3px solid #00ff00;
             border-radius: 10px;
             box-shadow: 0 0 10px #00ff00;
-            flex: 1 1 250px; 
-            max-width: 250px; 
+            flex: 1 1 250px;
+            max-width: 300px;
             transition: transform 0.3s, box-shadow 0.3s;
         }
-        .card:hover {
-            transform: scale(1.05);
-            box-shadow: 0 0 20px #00ff00;
-        }
-        .card img {
-            width: 100%;
-            height: auto;
-            border: 3px solid #00ff00;
-            border-radius: 5px;
-        }
-        .card h2 {
-            color: #ffcc00;
-            text-shadow: 2px 2px #000;
-            margin-top: 0;
-        }=
+        .card:hover { transform: scale(1.05); box-shadow: 0 0 20px #00ff00; }
+        .card img { width: 100%; height: auto; border: 3px solid #00ff00; border-radius: 5px; }
+
+        /* Contact Section */
+        #contact h1 { font-size: 2em; color: #00ff00; text-shadow: 2px 2px #000; margin-bottom: 20px; }
+        #contact p { font-size: 14px; }
     </style>
 </head>
 <body>
@@ -88,30 +73,38 @@
         <a href="#builds">Builds</a>
         <a href="#contact">Contact</a>
     </nav>
+
+    <!-- Menu Section -->
     <section id="menu">
         <h1>Welcome to AdyCraft!</h1>
-        <p>Bine ai venit! Foloseste navigatia de sus pentru a exlpora creatiile mele si pentru a ma contacta! 
-</p>
+        <p>Use the navigation above to explore my Minecraft builds and contact me.</p>
     </section>
+
+    <!-- Builds Section -->
     <section id="builds">
         <h1>My Minecraft Builds</h1>
         <div class="cards-container">
+            <!-- First card: now uses the second image -->
             <div class="card">
-                <h2>Tablouase Minecraft</h2>
-                <img src="https://i.etsystatic.com/19912915/r/il/600fb7/3903868647/il_1588xN.3903868647_2l0p.jpg" alt="Tablouri">
-                <p>Niste tablorui pe care le-am colorat!Am folosit un tablou de 10x10 cm si markere permanente.</p>
+                <h2>Farm Build</h2>
+                <img src="https://i.etsystatic.com/19912915/r/il/600fb7/3903868647/il_570xN.3903868647_2l0p.jpg" alt="Farm Build">
+                <p>A fully automated farm!</p>
             </div>
+
+            <!-- Second card: now uses the first image -->
             <div class="card">
-                <h2>Figurine din Hartie</h2>
-                <img src="https://i.ytimg.com/vi/hvYFW9T9TKw/maxresdefault.jpg" alt="Figurine">
-                <p>Niste figurine din hartie. Le-am realizat cu greu prima oara fiind cea mai rea,am folosit foi cu patrate pentru rezultate cat mai bune si markere permanente pentru culori.</p>
+                <h2>Castle Build</h2>
+                <img src="https://i.ytimg.com/vi/hvYFW9T9TKw/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLBFLZWIjO6UqvH6WnmNp3Le-Edk-A" alt="Castle Build">
+                <p>A massive castle I built!</p>
             </div>
+        </div>
     </section>
+
+    <!-- Contact Section -->
     <section id="contact">
-        <h2>Contact Me</h2>
-        <p>Email:pavaladriann0@gmail.com</p>
+        <h1>Contact Me</h1>
+        <p>Email: pavaladriann0@gmail.com</p>
         <p>Instagram: paval_ady_adyscrafts</p>
     </section>
 </body>
 </html>
-
